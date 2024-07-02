@@ -34,5 +34,5 @@ trait Negatable:
   def negate(operand: Self): Result
 
   extension (operand: Self)
-    @targetName("divide")
+    @targetName("negate")
     inline def `unary_-`: Result = negate(operand)
